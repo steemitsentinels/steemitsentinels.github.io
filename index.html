@@ -260,6 +260,7 @@
 
   <script>
     setInterval(function () {
+      /*
       if ($(document).scrollTop() >= screen.height - 300) {
         $("#logoContainer").css("color", "#37C174");
         $("img", "#logoContainer").attr("src", "img/flat_logo2.png");
@@ -267,6 +268,14 @@
       else {
         $("#logoContainer").css("color", "white");
         $("img", "#logoContainer").attr("src", "img/flat_logo.png");
+      }*/
+      if(window.location.href.substring(window.location.href.indexOf("#")) == "#index"){
+        $("#logoContainer").css("color", "white");
+        $("img", "#logoContainer").attr("src", "img/flat_logo.png");        
+      }
+      else{
+        $("#logoContainer").css("color", "#37C174");
+        $("img", "#logoContainer").attr("src", "img/flat_logo2.png");
       }
     }, 100);
     const toggleExpansion = function (element) {
