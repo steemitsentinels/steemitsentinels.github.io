@@ -34,6 +34,11 @@
       background-color: white;
     }
 
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+
     .title {
       font-size: 20px;
     }
@@ -70,251 +75,278 @@
       font-family: arial;
     }
   </style>
+  <body>
+    <section class="panel home" data-section-name="index" style="height: 634px;">
+      <header class="fill theme segment" style="height: 100vh; overflow: hidden; text-align: center; background-image: url('img/background.png'); position: relative;">
+        <!--TOP SECTION-->
 
-<body>
-  <!--<header class="page-header non-full-height-section">
-      test
-    </header>-->
-  <section class="panel home" data-section-name="index" style="height: 634px;">
-    <header class="fill theme segment" style="height: 100vh; overflow: hidden; text-align: center; background-image: url('img/background.png'); position: relative;">
-      <!--TOP SECTION-->
-
-      <div style="position: absolute; width: 100%; z-index: 2;">
-        <div class="fill" style="padding: 14px 0 7px 0; position: fixed; /*background-color: rgba(0,0,0,0.1);*/">
-          <div style="display: inline-block;">
-            <table id="logoContainer" style="color: white;">
-              <tr>
-                <td>
-                  <img src="img/flat_logo.png" style="width: 40px;">
-                </td>
-                <td style="text-align: center; font-size: 24px;">
-                  <span>Steemit<br>Sentinels</span>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div class="fill" style="height: 90px;">
-          <!--PADDING DIV-->
-        </div>
-
-        <div class="fill">
-          <div style="display: inline-block; padding: 5px 10px;">
-            <table style="color: white;">
-              <tr>
-                <td style="text-align: center; font-size: 18px;">
-                  Upvote your favourite Steemit posts <br>automatically!
-                </td>
-              </tr>
-              <tr>
-                <td style="text-align: center; padding: 20px 0;">
-                  <div style="border: 1px dashed; margin: 10px; width: 100px; display: inline-block; padding: 10px; text-align: center;">
-                    <div class="fill">
-                      <span>Android</span>
-                    </div>
-                    <div class="fill" style="text-align: center; padding: 0 0 3px 0;">
-                      <img src="img/android.png" style="width: 40px; height: 40px;">
-                    </div>
-                    <a href="Steemit Sentinels.apk" download><button class="textTheme" style="width: 90%;">Download</button></a>
-                  </div>
-                  <div style="border: 1px dashed; margin: 10px; width: 100px; display: inline-block; padding: 10px; text-align: center;">
-                    <div class="fill">
-                      <span>IOS</span>
-                    </div>
-                    <div class="fill" style="text-align: center; padding: 0 0 3px 0;">
-                      <img src="img/ios.png" style="width: 40px; height: 40px;">
-                    </div>
-                    <!--<button class="textTheme" style="width: 90%;">Download</button>-->
-                    <span>Coming Soon</span>
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-      <!--BOTTOM SECTION-->
-      <div style="position: absolute; top: 55%; left: 0; right: 0;">
-        <img src="img/usage-half.png">
-      </div>
-    </header>
-  </section>
-  <section class="panel welcome" data-section-name="welcome" style="height: 622px;">
-    <table class="fill" style="height: 100%;">
-      <tr>
-        <td style="text-align: center;">
-          <div class="fill" style="padding: 20px 0 10px 0;">
-            <div id="desc" class="descriptionContainers">
-              <table>
+        <div style="position: absolute; width: 100%; z-index: 2;">
+          <div class="fill" style="padding: 14px 0 7px 0; position: fixed; /*background-color: rgba(0,0,0,0.1);*/">
+            <div style="display: inline-block;">
+              <table id="logoContainer" style="color: white;">
                 <tr>
-                  <td class="textTheme title">
-                    <span>The Community Welcomes You</span>
+                  <td>
+                    <img src="img/flat_logo.png" style="width: 40px;">
+                  </td>
+                  <td style="text-align: center; font-size: 24px;">
+                    <span>Steemit<br>Sentinels</span>
                   </td>
                 </tr>
               </table>
             </div>
           </div>
-          <div class="fill" style="padding: 0 0 10px 0;">
-            <div id="desc" class="descriptionContainers">
-              <table>
-                <tr>
-                  <td class="textTheme title">
-                    <div class="fill">
-                      <img src="img/welcome.png" class="theme" style="width: 170px;  height: auto;">
-                    </div>
+          <div class="fill" style="height: 90px;">
+            <!--PADDING DIV-->
+          </div>
 
+          <div class="fill">
+            <div style="display: inline-block; padding: 5px 10px;">
+              <table style="color: white;">
+                <tr>
+                  <td style="text-align: center; font-size: 18px;">
+                    Upvote your favourite Steemit posts <br>automatically!
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; padding: 20px 0;">
+                    <div style="border: 1px dashed; margin: 10px; width: 100px; display: inline-block; padding: 10px; text-align: center;">
+                      <div class="fill">
+                        <span>Android</span>
+                      </div>
+                      <div class="fill" style="text-align: center; padding: 0 0 3px 0;">
+                        <img src="img/android.png" style="width: 40px; height: 40px;">
+                      </div>
+                      <a href="Steemit Sentinels.apk" download><button class="textTheme" style="width: 90%;">Download</button></a>
+                    </div>
+                    <div style="border: 1px dashed; margin: 10px; width: 100px; display: inline-block; padding: 10px; text-align: center;">
+                      <div class="fill">
+                        <span>IOS</span>
+                      </div>
+                      <div class="fill" style="text-align: center; padding: 0 0 3px 0;">
+                        <img src="img/ios.png" style="width: 40px; height: 40px;">
+                      </div>
+                      <!--<button class="textTheme" style="width: 90%;">Download</button>-->
+                      <span>Coming Soon</span>
+                    </div>
                   </td>
                 </tr>
               </table>
             </div>
+          </div>
+        </div>
+        <!--BOTTOM SECTION-->
+        <div style="position: absolute; top: 55%; left: 0; right: 0;">
+          <img src="img/usage-half.png">
+        </div>
+      </header>
+    </section>
+    <section class="panel welcome" data-section-name="welcome" style="height: 622px;">
+      <table class="fill" style="height: 100%;">
+        <tr>
+          <td style="text-align: center;">
+            <div class="fill" style="padding: 20px 0 10px 0;">
+              <div id="desc" class="descriptionContainers">
+                <table>
+                  <tr>
+                    <td class="textTheme title">
+                      <span>The Community Welcomes You</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="fill" style="padding: 0 0 10px 0;">
+              <div id="desc" class="descriptionContainers">
+                <table>
+                  <tr>
+                    <td class="textTheme title">
+                      <div class="fill">
+                        <img src="img/welcome.png" class="theme" style="width: 170px;  height: auto;">
+                      </div>
+
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="fill">
+              <div class="descriptionContainers">
+                <table>
+                  <tr>
+                    <td class="textTheme textBody" style="font-size: 16px; text-align: center;">
+                      <div style="display: inline-block; max-width: 500px; width: 100%;">
+                        <span>Steemit Sentinels makes it easy to upvote your favourite posts from your favourite authors
+                          without having to checking Steemit every day</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section class="panel safety" data-section-name="safety" style="height: 630px;">
+      <table class="fill" style="height: 100%;">
+        <tr>
+          <td style="text-align: center;">
+            <div class="fill" style="padding: 20px 0 10px 0;">
+              <div id="desc" class="descriptionContainers">
+                <table>
+                  <tr>
+                    <td class="textTheme title">
+                      <span>Trusted</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="fill" style="padding: 0 0 10px 0;">
+              <div id="desc" class="descriptionContainers">
+                <table>
+                  <tr>
+                    <td class="textTheme title">
+                      <div class="fill">
+                        <img src="img/lock.png" class="theme" style="width: 130px;  height: auto;">
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="fill">
+              <div class="descriptionContainers">
+                <table>
+                  <tr>
+                    <td class="textTheme textBody" style="font-size: 16px; text-align: center;">
+                      <div style="display: inline-block; max-width: 500px; width: 100%;">
+                        <span>The Steemit Sentinels puts security first by ensuring a secure login environment and does
+                          not
+                          collect any sensitive user data. Do not use the application if received from a source other
+                          than this website</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section class="panel versions" data-section-name="versions" style="height: 1298px;">
+      <div class="fill" style="height: 90px;">
+        <!--PADDING DIV-->
+      </div>
+      <div class="fill" style="padding: 20px 0 10px 0;">
+        <div id="desc" class="descriptionContainers">
+          <table>
+            <tr>
+              <td class="textTheme title">
+                <span>Versions</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="changelogExpansionTile fill theme" onclick="toggleExpansion(this);" style="text-align: left; border-top: 1px solid lightgray;">
+        <span style="float: left; padding: 10px 20px; font-weight: bold;">Release v1.0.1</span>
+        <div class="changelogExpansionTileContent" style="display: none; overflow-wrap: break-word; margin: 10px 0 0 20px; width: calc(100% - 20px);">
+          <div class="fill">
+            <span style="float: left; padding: 10px 20px; ">Wed Feb 20 2019 19:26:07 GMT-0500</span>
           </div>
           <div class="fill">
-            <div class="descriptionContainers">
-              <table>
-                <tr>
-                  <td class="textTheme textBody" style="font-size: 16px; text-align: center;">
-                    <div style="display: inline-block; max-width: 500px; width: 100%;">
-                      <span>Steemit Sentinels makes it easy to upvote your favourite posts from your favourite authors
-                        without having to checking Steemit every day</span>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </div>
+            <span style="float: left; width: 100%; padding: 10px 20px;">Android Checksum: 2cce7753710d287087ee74489b5449a4</span>
           </div>
-        </td>
-      </tr>
-    </table>
-  </section>
-  <section class="panel safety" data-section-name="safety" style="height: 630px;">
-    <table class="fill" style="height: 100%;">
-      <tr>
-        <td style="text-align: center;">
-          <div class="fill" style="padding: 20px 0 10px 0;">
-            <div id="desc" class="descriptionContainers">
-              <table>
-                <tr>
-                  <td class="textTheme title">
-                    <span>Trusted</span>
-                  </td>
-                </tr>
-              </table>
-            </div>
+          <div class="fill" style="padding: 10px 20px 0px 20px;">
+            <span style="float: left; width: 100%; padding: 0 0 5px 0;">Updates: </span>
+            <ul style="line-height: 25px;">
+              <li>
+                <span>Minor bug fixes</span>
+              </li>
+            </ul>
           </div>
-          <div class="fill" style="padding: 0 0 10px 0;">
-            <div id="desc" class="descriptionContainers">
-              <table>
-                <tr>
-                  <td class="textTheme title">
-                    <div class="fill">
-                      <img src="img/lock.png" class="theme" style="width: 130px;  height: auto;">
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </div>
+        </div>
+      </div>    
+      <div class="changelogExpansionTile fill theme" onclick="toggleExpansion(this);" style="text-align: left;">
+        <span style="float: left; padding: 10px 20px; font-weight: bold;">Release v1.0.0</span>
+        <div class="changelogExpansionTileContent" style="display: none; overflow-wrap: break-word; margin: 10px 0 0 20px; width: calc(100% - 20px);">
+          <div class="fill">
+            <span style="float: left; padding: 10px 20px; ">Mon Feb 11 2019 14:28:36 GMT-0500</span>
           </div>
           <div class="fill">
-            <div class="descriptionContainers">
-              <table>
-                <tr>
-                  <td class="textTheme textBody" style="font-size: 16px; text-align: center;">
-                    <div style="display: inline-block; max-width: 500px; width: 100%;">
-                      <span>The Steemit Sentinels puts security first by ensuring a secure login environment and does
-                        not
-                        collect any sensitive user data. Do not use the application if received from a source other
-                        than this website</span>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </div>
+            <span style="float: left; width: 100%; padding: 10px 20px;">Android Checksum: 86f0fef9337ce6cfaebb01c121350d4e</span>
           </div>
-        </td>
-      </tr>
-    </table>
-  </section>
-  <section class="panel versions" data-section-name="versions" style="height: 1298px;">
-    <div class="fill" style="height: 90px;">
-      <!--PADDING DIV-->
-    </div>
-    <div class="fill" style="padding: 20px 0 10px 0;">
-      <div id="desc" class="descriptionContainers">
-        <table>
-          <tr>
-            <td class="textTheme title">
-              <span>Versions</span>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div class="changelogExpansionTile fill theme" onclick="toggleExpansion(this);" style="text-align: left; border-top: 1px solid lightgray;">
-      <span style="float: left; padding: 10px 20px; font-weight: bold;">Release v1.0.1</span>
-      <div class="changelogExpansionTileContent" style="display: none; overflow-wrap: break-word; margin: 10px 0 0 20px; width: calc(100% - 20px);">
-        <div class="fill">
-          <span style="float: left; padding: 10px 20px; ">Wed Feb 20 2019 19:26:07 GMT-0500</span>
-        </div>
-        <div class="fill">
-          <span style="float: left; width: 100%; padding: 10px 20px;">Android Checksum: 2cce7753710d287087ee74489b5449a4</span>
-        </div>
-        <div class="fill" style="padding: 10px 20px 0px 20px;">
-          <span style="float: left; width: 100%; padding: 0 0 5px 0;">Updates: </span>
-          <ul style="line-height: 25px;">
-            <li>
-              <span>Minor bug fixes</span>
-            </li>
-          </ul>
+          <div class="fill" style="padding: 10px 20px 15px 20px;">
+            <span style="float: left; width: 100%;">Initial Release</span>
+          </div>
         </div>
       </div>
-    </div>    
-    <div class="changelogExpansionTile fill theme" onclick="toggleExpansion(this);" style="text-align: left;">
-      <span style="float: left; padding: 10px 20px; font-weight: bold;">Release v1.0.0</span>
-      <div class="changelogExpansionTileContent" style="display: none; overflow-wrap: break-word; margin: 10px 0 0 20px; width: calc(100% - 20px);">
-        <div class="fill">
-          <span style="float: left; padding: 10px 20px; ">Mon Feb 11 2019 14:28:36 GMT-0500</span>
-        </div>
-        <div class="fill">
-          <span style="float: left; width: 100%; padding: 10px 20px;">Android Checksum: 86f0fef9337ce6cfaebb01c121350d4e</span>
-        </div>
-        <div class="fill" style="padding: 10px 20px 15px 20px;">
-          <span style="float: left; width: 100%;">Initial Release</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script src="./index_files/jquery-2.2.1.min.js"></script>
-  
-  <script>
-    setInterval(function () {
-      if(window.location.href.substring(window.location.href.indexOf("#")) == "#index"){
-        $("#logoContainer").css("color", "white");
-        $("img", "#logoContainer").attr("src", "img/flat_logo.png");        
+    </section>
+    <section class="panel issues" data-section-name="issues" style="height: 630px;">
+      <table class="fill" style="height: 100%;">
+        <tr>
+          <td style="text-align: center;">
+            <div class="fill" style="padding: 20px 0 10px 0;">
+              <div id="desc" class="descriptionContainers">
+                <table>
+                  <tr>
+                    <td class="textTheme title">
+                      <span>Issues</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="fill" style="padding: 0 0 10px 0;">
+              <div id="desc" class="descriptionContainers">
+                <table>
+                  <tr>
+                    <td class="textTheme title">
+                      <div class="fill">
+                        <img src="img/bug.png" class="theme" style="width: 130px;  height: auto;">
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="fill">
+              <div class="descriptionContainers">
+                <table>
+                  <tr>
+                    <td class="textTheme textBody" style="font-size: 16px; text-align: center;">
+                      <div style="display: inline-block; max-width: 500px; width: 100%;">
+                        <span>Maintaining software quality is our mission. Feel welcome to make any bug report at <a href="https://github.com/steemitsentinels/steemitsentinels.github.io/issues" style="text-decoration: underline;">our issues page</a> on Github</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <script src="./index_files/jquery-2.2.1.min.js"></script>
+    <script>
+      setInterval(function () {
+        if(window.location.href.substring(window.location.href.indexOf("#")) == "#index"){
+          $("#logoContainer").css("color", "white");
+          $("img", "#logoContainer").attr("src", "img/flat_logo.png");        
+        }
+        else{
+          $("#logoContainer").css("color", "#37C174");
+          $("img", "#logoContainer").attr("src", "img/flat_logo2.png");
+        }
+      }, 100);
+      const toggleExpansion = function (element) {
+        $(".changelogExpansionTileContent", element).slideToggle(100);
       }
-      else{
-        $("#logoContainer").css("color", "#37C174");
-        $("img", "#logoContainer").attr("src", "img/flat_logo2.png");
-      }
-    }, 100);
-    const toggleExpansion = function (element) {
-      $(".changelogExpansionTileContent", element).slideToggle(100);
-    }
-  </script>
-
-  
-
-
-
-  <!--<script src="script/velocity.js"></script>-->
-
-  <script src="./index_files/jquery.scrollify.js"></script>
-
-
-  <!--<script src="script/bundle.js"></script>-->
-
-  <script src="./index_files/main.js"></script>
-  <script async="" defer="" src="./index_files/buttons.js"></script>
-</body>
-
+    </script>
+    <script src="./index_files/jquery.scrollify.js"></script>
+    <script src="./index_files/main.js"></script>
+    <script async="" defer="" src="./index_files/buttons.js"></script>
+  </body>
 </html>
